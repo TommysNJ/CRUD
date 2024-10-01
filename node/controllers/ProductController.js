@@ -6,8 +6,8 @@ import ProductModel from "../models/ProductModel.js";
 // Mostrar todos los productos 
 export const getAllProducts = async (req, res) => {
     try {
-        const productos = await ProductModel.findAll()
-        res.json(productos)
+        const products = await ProductModel.findAll()
+        res.json(products)
     } catch (error) {
         res.json({message: error.message})
     }
@@ -16,10 +16,10 @@ export const getAllProducts = async (req, res) => {
 // Mostrar un producto
 export const getProducto = async (req, res) => {
     try {
-        const producto = await ProductModel.findAll({
+        const product = await ProductModel.findAll({
             where:{ id:req.params.id }
         })
-        res.json(producto)
+        res.json(product[0])
     } catch (error) {
         res.json({message: error.message})
     }
