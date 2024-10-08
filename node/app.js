@@ -5,12 +5,17 @@ import cors from 'cors'
 import db from "./database/db.js"
 //importación del enrutador
 import productRoutes from './routes/routes.js'
+import authRoutes from './routes/authRoutes.js'
+import { verifyToken } from './middleware/auth.js'
 
 const app = express()
 
 app.use (cors())
 app.use(express.json())
-app.use('/products', productRoutes)
+
+// Rutas para autenticación
+app.use('/auth', authRoutes); // Rutas para registro y login
+app.use('/products', verifyToken, productRoutes); // Aplica el middleware de verificación
 
 try {
     await db.authenticate()
