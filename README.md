@@ -1,6 +1,7 @@
 **CRUD - Productos y Autenticación**
 
 ***Descripción del Proyecto***
+
 Este es un proyecto completo de una aplicación CRUD que permite gestionar productos y autenticación de usuarios. 
 La aplicación está dividida en un backend hecho con Node.js y Express, junto con una base de datos utilizando 
 Sequelize. El frontend está construido con React.
@@ -12,11 +13,13 @@ Este proyecto fue desarrollado como parte de un aprendizaje práctico, implement
 protegidos para manejar operaciones CRUD.
 
 ***Motivación***
+
 El objetivo de este proyecto fue aprender a construir una aplicación full-stack que incluye autenticación de 
 usuarios y protección de rutas, además de aprender cómo conectar el frontend con el backend utilizando React y 
 Express.
 
 ***Tecnologías Utilizadas***
+
 Backend:
 - Node.js con Express.js
 - Sequelize (ORM para manejar la base de datos)
@@ -30,6 +33,7 @@ Frontend:
 - localStorage para almacenar el token JWT en el frontend
 
 ***Funcionalidades***
+
 - Registro de usuarios: Los usuarios pueden crear una cuenta con email y contraseña.
 - Inicio de sesión: Los usuarios registrados pueden iniciar sesión y obtener un token JWT.
 - Protección de rutas: Solo los usuarios autenticados pueden acceder a las rutas para crear, editar o
@@ -38,6 +42,7 @@ Frontend:
   interfaz amigable.
 
 ***Instalación***
+
 Requisitos previos:
 - Node.js
 - MySQL o cualquier base de datos compatible con Sequelize
@@ -52,6 +57,7 @@ Instrucciones para ejecutar el proyecto:
 7. Acceder a la aplicación en el navegador visitando http://localhost:3000
 
 ***Cómo Usar el Proyecto***
+
 1. Registro: Los usuarios pueden registrarse proporcionando un email y una contraseña.
 2. Inicio de Sesión: Después de iniciar sesión, el usuario obtiene un token JWT que se almacena en
    localStorage.
@@ -60,4 +66,5 @@ Instrucciones para ejecutar el proyecto:
 4. Cerrar Sesión: El botón de “Cerrar Sesión” se encuentra en la página de productos.
 
 ***Créditos***
+
 Este proyecto fue desarrollado por Tomás Núñez como parte de un aprendizaje sobre desarrollo full-stack.
