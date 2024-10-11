@@ -23,7 +23,7 @@ const CompCreate = () => {
                     }
                 }
             );
-            navigate('/show'); // Redirigir a la página principal después de agregar el producto
+            navigate('/show');
         } catch (error) {
             console.error('Error al agregar el producto', error);
             alert('Hubo un error al agregar el producto. Por favor, intenta nuevamente.');

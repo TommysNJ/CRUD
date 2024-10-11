@@ -5,7 +5,7 @@ const CompLogout = () => {
 
     const handleLogout = () => {
         localStorage.removeItem('token'); // Eliminar el token del almacenamiento local
-        navigate('/login'); // Redirigir al login
+        navigate('/login'); 
     }
 
     return (

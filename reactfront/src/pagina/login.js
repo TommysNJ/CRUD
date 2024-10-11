@@ -2,13 +2,13 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
-const URI = 'http://localhost:8000/auth/login'; // URL del backend para login
+const URI = 'http://localhost:8000/auth/login'; 
 
 const CompLogin = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
-    const [error, setError] = useState(''); // Para manejar errores
+    const [error, setError] = useState(''); 
 
     const login = async (e) => {
         e.preventDefault();
@@ -17,7 +17,7 @@ const CompLogin = () => {
             
             if (res.status === 200 && res.data.token) {
                 localStorage.setItem('token', res.data.token); // Guardar el token en localStorage
-                navigate('/show'); // Redirigir a la página de productos (show.js)
+                navigate('/show');
             } else {
                 throw new Error('Credenciales inválidas');
             }
